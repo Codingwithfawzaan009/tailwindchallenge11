@@ -339,6 +339,9 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -500,6 +503,10 @@
   @media (width >= 48rem) {
     .md\:flex-col {
       flex-direction: column;
+    }
+    .md\:rounded-b-2xl {
+      border-bottom-right-radius: var(--radius-2xl);
+      border-bottom-left-radius: var(--radius-2xl);
     }
   }
   @media (width >= 64rem) {
